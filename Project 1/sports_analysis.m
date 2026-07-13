@@ -31,7 +31,6 @@ is_above_in_3_skills = sum(is_above_mean')' >= 3;
 elite_athletes = athletes_names(is_above_in_3_skills);
 disp(["Elite athletes are: ", elite_athletes{1}, ", ", elite_athletes{2}, ", and ", elite_athletes{3}])
 
-pkg load datatypes
 skills = ["Speed(km/h)"; "Endurance(min)"; "Strength(kg)"; "Agility(score)"];
 bar([1, 2, 3, 4], athletes_data_mean)
 set(gca, 'XTickLabel', skills);
