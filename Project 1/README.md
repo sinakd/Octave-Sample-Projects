@@ -1,25 +1,25 @@
 # Sports Performance Analyst (GNU Octave)
 
-A GNU Octave project for analyzing athletes' performance using descriptive statistics, logical indexing, and data visualization.
+A GNU Octave project that analyzes athletes' performance using descriptive statistics, logical indexing, and data visualization.
 
 ---
 
 ## Project Overview
 
-This project analyzes the performance records of a group of athletes based on four different skills:
+This project evaluates the performance of a group of athletes based on four different skills:
 
 * Speed (km/h)
 * Endurance (min)
 * Strength (kg)
 * Agility (score)
 
-The program computes descriptive statistics, identifies elite athletes based on their overall performance, visualizes the results, and exports the average values to a text file.
+The program calculates descriptive statistics, identifies high-performing athletes, visualizes the data, and exports the mean values to a text file.
 
 ---
 
 ## Dataset
 
-Each row represents one athlete, while each column represents one skill.
+Each row of the matrix represents an athlete, and each column represents a performance metric.
 
 | Column | Skill           |
 | ------ | --------------- |
@@ -28,53 +28,43 @@ Each row represents one athlete, while each column represents one skill.
 | 3      | Strength (kg)   |
 | 4      | Agility (score) |
 
-The athlete names are stored separately in a cell array.
+The athletes' names are stored separately in a cell array.
 
 ---
 
 ## Features
 
-* Computes descriptive statistics:
+* Calculates descriptive statistics for each skill:
 
   * Mean
   * Median
   * Standard Deviation
-* Displays a formatted statistical report in the Command Window.
+* Prints a formatted statistical report using `fprintf`.
 * Uses logical indexing to identify elite athletes.
-* Generates multiple visualizations.
-* Saves the calculated mean values to a text file.
+* Creates multiple plots for performance analysis.
+* Saves the mean values to a text file named `report.txt`.
 
 ---
 
 ## Elite Athlete Selection
 
-The original challenge defines an elite athlete as one whose performance is **above the mean in all four skills**.
+The original challenge defines an elite athlete as someone whose performance is **above the mean in all four skills**.
 
-With the provided dataset, **no athlete satisfies this condition**.
-
-Therefore, the implementation identifies athletes whose performance is **above the mean in at least three of the four skills**.
+Since no athlete in the provided dataset satisfies this condition, the implementation identifies athletes who perform **above the mean in at least three skills**.
 
 ---
 
 ## Visualizations
 
-The program generates two figures:
+The script displays two figures:
 
-### 1. Mean Performance of Each Skill
+1. A **bar chart** showing the mean value of each skill.
+2. A second figure containing two subplots:
 
-A bar chart comparing the average values of:
+   * **Scatter plot:** Strength vs. Speed
+   * **Bar chart:** Endurance values of all athletes
 
-* Speed
-* Endurance
-* Strength
-* Agility
-
-### 2. Athlete Performance
-
-A second figure containing two subplots:
-
-* **Scatter Plot:** Strength vs. Speed
-* **Bar Chart:** Endurance values for all athletes
+> **Note:** These figures are displayed on the screen only and are **not saved as image files**, as the project requirements only require saving the numerical report.
 
 ---
 
@@ -84,36 +74,24 @@ A second figure containing two subplots:
 .
 ├── sports_analysis.m
 ├── report.txt
-├── mean_skills_bar.png
-├── athlete_performance.png
 └── README.md
 ```
 
-> If the figures are saved as images, they can be displayed below.
-
-### Mean Skill Values
-
-![Mean Skill Values](mean_skills_bar.png)
-
-### Athlete Performance
-
-![Athlete Performance](athlete_performance.png)
-
 ---
 
-## Output Files
+## Output
 
-| File                      | Description                                       |
-| ------------------------- | ------------------------------------------------- |
-| `report.txt`              | Mean values of the four skills                    |
-| `mean_skills_bar.png`     | Average skill bar chart *(optional)*              |
-| `athlete_performance.png` | Scatter plot and endurance bar chart *(optional)* |
+The script generates:
+
+* A formatted statistical report in the Command Window.
+* Two visualization figures.
+* A text file named `report.txt` containing the mean values of the four skills.
 
 ---
 
 ## How to Run
 
-Run the script in GNU Octave:
+Execute the script in GNU Octave:
 
 ```octave
 sports_analysis
@@ -121,11 +99,12 @@ sports_analysis
 
 The script will:
 
-1. Compute descriptive statistics.
-2. Display a formatted report.
-3. Identify elite athletes.
-4. Generate the plots.
-5. Save the mean values to `report.txt`.
+1. Load the dataset.
+2. Compute descriptive statistics.
+3. Display the statistical report.
+4. Identify elite athletes.
+5. Display the charts.
+6. Save the mean values to `report.txt`.
 
 ---
 
