@@ -1,4 +1,3 @@
-```markdown
 # 🦠 Epidemic Outbreak Modeler (Challenge 4)
 
 A numerical simulation of the classic **SIR (Susceptible-Infected-Recovered)** epidemic model using ordinary differential equations.  
@@ -155,4 +154,3 @@ Plot saved as sir_plot.png with 150 DPI resolution.
 
 *Challenge 4 – Epidemic Outbreak Modeler  
 Concepts: Solving ODEs (ode45), function workspaces, subplot, data export.*
-```
