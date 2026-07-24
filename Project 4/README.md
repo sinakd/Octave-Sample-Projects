@@ -145,12 +145,5 @@ Plot saved as sir_plot.png with 150 DPI resolution.
 
 ---
 
-## 🛠️ Dependencies
-
-- **MATLAB** (R2015b or later) **or** **GNU Octave** (≥ 4.0)
-- No additional toolboxes are required. The code uses only built-in functions: `ode45`, `csvwrite`, `plot`, `subplot`, `fprintf`, `max`.
-
----
-
 *Challenge 4 – Epidemic Outbreak Modeler  
 Concepts: Solving ODEs (ode45), function workspaces, subplot, data export.*
