@@ -50,7 +50,3 @@ octave fourier.m
 The script successfully detects both target frequencies:
 - 50.0 Hz (magnitude: ~0.7)
 - 120.0 Hz (magnitude: ~1.0)
-
-## Author
-Sina Kiadaliri
-Feel free to add your name at the bottom!
