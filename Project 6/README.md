@@ -12,10 +12,6 @@ This project implements a price analysis and forecasting system for commodity pr
 - High-resolution PNG export (300 DPI)
 - Summary statistics output to console
 
-## 🛠️ Requirements
-- **Octave** (version 4.0 or higher) or **MATLAB** (R2016b or higher)
-- No additional toolboxes required
-
 ## 📁 File Structure
 ```
 ├── analyze_price.m          # Main analysis script
